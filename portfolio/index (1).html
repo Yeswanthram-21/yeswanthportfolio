@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="color.css">
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certificates">certificates</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+        </nav>
+        <div class="header-text">
+            <br><br>
+            <p>Web Developer</p>
+
+            <h1>Hello I'm <span>Yeswanth Ram</span><br> From National Engineering College</h1>
+
+        </div>
+
+    </div>
+
+</div>
+<!-----------------about------------------------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="2112070-Yeswanthram R.jpg" alt="">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About me</h1>
+                <p>Web designer and developer I specialize in front-end
+and back-end development, transforming ideas into
+digital experiences. From responsive and
+user-friendly interfaces to robust and scalable
+server-side solutions, I thrive on turning
+challenges into opportunities for innovation.
+</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('Education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="Skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Web/App Designing</li>
+                        <li><span>Web Development</span><br>Web app Development</li>
+                        <li><span>App Development</span><br>Building Andriod/IOS apps</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Education">
+                    <ul>
+                        <li><span>CGPA</span><br>7.4</li>
+                        <li><span>SSLC</span><br>Government High School<br>92%</li>
+                        <li><span>HSC</span><br>Voc Boys Govt High School<br>90.08%</li>
+                    </ul>
+                </div>
+               
+            </div>
+        </div>
+    </div>
+
+</div>
+<!----------------------------------services------------------------>
+<div id="projects">
+  <div class="projects">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="projects-list">
+            <div>
+                <h2>Oracle</h2><br>
+                <p style="color: aliceblue;">Library Management System usig Oracle apex.
+using dbms low code web site design using oracle Apex </p><br>
+               <a href="https://iacademy2.oracle.com/ords/f?p=4550:1:6666276446196:::::"><img src="lib.png" style="width:200px;height:200px;"   alt=""></a><br><br>
+                <h style="font-size: large;">Java project</h>
+                <p style="color: antiquewhite;">Employee Management System using java program</p><br>
+                <img src="emp.png" alt="" style="width:200px;height:200px;"><br>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+  </div>
+
+</div>
+<script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<div id="certificates">
+    <div class="certificates">
+      <div class="container">
+          <h1 class="sub-title">My Certificates</h1><br>
+          <div class="certificates-list">
+              <div>
+                  <h2 style="color: gold;">Oracle apex Certificate </h2><br>
+                  <p style="color:aliceblue">plsql internship certificate related to dbms web development. </p><br>
+                  <h>Nptel:</h><br><br>
+                  <p>1.Software Testing<br><br>2.Cloud Computing<br><br>3.IIOT 4.0</p>
+                  <a href="#">Learn more</a>
+              </div>
+          </div>
+      </div>
+    </div>
+  </div>
+  <div id="contact">
+    <div class="contact">
+      <div class="container">
+          <h1 class="sub-title">My Contact</h1><br>
+          <div class="contact details">
+              <div>
+                  <h2>contact:</h2><br>
+                  <img src="logo.png" class="logo">
+                  <p>email id : yeswanthram612@gmail.com<br>
+                    phone no : 6383793820 <br> 
+                         
+                  </p>
+
+                  <a href="#">Learn more</a>
+              </div>
+          </div>
+      </div>
+    </div>
+
+</body>
+</html>
